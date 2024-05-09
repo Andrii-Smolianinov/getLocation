@@ -12,6 +12,7 @@ const displayGeoData = (position) => {
   const { latitude, longitude } = position.coords;
 
   locationDisplayEl.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+  locationDisplayEl.textContent = "Показати геолокацію на карті";
   viewCordsEl.textContent = `latitude: ${latitude}; longitude: ${longitude}`;
 };
 
